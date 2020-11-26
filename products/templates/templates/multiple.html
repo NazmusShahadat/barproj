@@ -1,0 +1,17 @@
+
+
+<h1>Generate multiple barcodes</h1>
+<body style="background-color:rgb(173, 210, 231);">
+<div class="card"></div>
+<form method="POST">
+    {% csrf_token %}
+    Number : <input type="number" name="input">
+</form> 
+</div>
+
+<h1>Number of barcodes: {{ inp }}</h1>
+<button type="submit">
+    <a href="{% url 'mult' %}">Generate</a>
+</button>
+</body>
+
